@@ -1,0 +1,22 @@
+Authentication -> Who am I - Proof
+Autharization -> What i can do? 
+
+Orkut is the 1st social media application
+
+
+// Prject Make Coding
+1. Create a node.js project
+2. Define the structure 
+    Back-End ->  
+        a. Router  -> receptionist
+        b. Controller -> waiter
+        c. Model -> code
+3. Auth (two type of user)
+    a. admin
+    b. customer
+
+    // dependencies added
+    * npm install bcrypt       -> Password encryption
+    * npm install express      -> HTTP requests and responses through routing and middleware
+    * npm install jsonwebtoken -> to identify an authenticated user
+    * npm install mongoose     -> Data modeling
