@@ -4,7 +4,7 @@ Autharization -> What i can do?
 Orkut is the 1st social media application
 
 
-// Prject Make Coding
+// Project Make Coding
 1. Create a node.js project
 2. Define the structure 
     Back-End ->  
@@ -21,4 +21,46 @@ Orkut is the 1st social media application
     * npm install jsonwebtoken -> to identify an authenticated user
     * npm install mongoose     -> Data modeling
 
-4. Cre
+4. Create Model
+    bring mongoose -> schema Create -> exports to convert into module
+
+5. Make server.js
+    require express
+    require mongoose
+        express is in app
+        start the server -> port number in config file
+        create a user where no user present
+    mongoose connect in server
+    make function for admin check
+
+
+6. Make Config folder
+    server.config.js for port number
+    db.config for database => name & url
+
+7. make api using postman -> write code for doing this
+
+8. Create Controller 
+    exports.signUp <- controller
+        logic to create the user
+        read the request body
+        insert data in user collection
+        return the response back to the user 
+9. route -> it is the layer which intercept the request
+    make the url using app 
+    controller require
+
+10. calling route in server.js
+    now call from the postman but before that
+        convert json into javaScript using express -> (middleware)
+
+11. check in mongodb using mongosh in terminal
+    already created a user using postman
+
+12. I i want to not return the password with calling from the postman api
+    goto -> auth.controller.js -> create object & pass only those data you want to see 
+
+13. Create a middleware file
+    inside this define if name, email, password, exist is not entered the failed
+
+14. build the api for user signIn & in response we got tokens
