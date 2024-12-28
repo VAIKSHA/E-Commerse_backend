@@ -51,12 +51,6 @@ exports.signin = async (req, res)=>{
             message: "This is not a valid User Id"
         });
     }
-    // Check if password is provided in the request
-    if (!req.body.password) {
-        return res.status(400).send({
-            message: "Password is required"
-        });
-    }
     // Check if password is correct
     const isPasswordValid = bcrypt.compareSync(req.body.password, user.password);
     if (!isPasswordValid) {
